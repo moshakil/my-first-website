@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Page</title>
+    <style>
+        body{
+            background: url("img/form8.jpg")
+        }
+        body{
+            background-repeat: no-repeat;
+            background-size: cover ;
+        }
+        .form-body{
+            text-align: center;
+            color: white;
+            padding-top: 10%;
+            font-family: sans-serif;
+            font-size: 17px;
+            padding-right: 12%;
+        }
+        .email{
+            font-style: italic;
+            border-style: solid;
+            border-color: brown;
+            border-radius: 9px;
+            font-size: 15px;
+            
+        }
+        .password{
+            font-style: italic;
+            border-style: solid;
+            border-color: brown;
+            border-radius: 9px;
+            font-size: 15px;
+        }
+        .radio-button{
+            color: orange;
+        }
+        .select-option{
+            background: seashell;
+            border-radius: 5px;
+            border-style: solid;
+        }
+        .browse{
+            background: cadetblue;
+            color: black;
+            font-family: tahoma;
+            border-radius: 15px;
+        }
+        .browse:hover{
+            opacity: 70%;
+        }
+        .submit-btn{
+            border-radius: 8px;
+            border-style: double;
+            font-size: 15px;
+            font-weight: 500;
+            background-color: cyan;
+        }
+        .submit-btn:hover{
+            opacity: 40%;
+        }
+    </style>
+</head>
+<body>
+    <form class="form-body">
+        <input type="text" placeholder=" Email" class="email" />
+        <input placeholder=" Password" type="password" class="password"/>
+        <br/> <br/> <br/> 
+        <span>Gender</span> <br/>
+        <div class="radio-button">
+            <input type="radio" value="Male" id="male" name="genderInput">Male <br/>
+            <input type="radio" value="female" id="female" name="genderInput">Female <br/>
+            <input type="radio" value="other" id="other" name="genderInput">Other <br/>
+        </div>    
+        <br/> <br/>
+        
+        Please put your picture here: <br/> <br/>
+        <input type="file" value="Browse File" class="browse"> <br/> <br/>
+        
+        <br/>
+
+        Favoirate Player :
+        <select class="select-option">
+            <option value="1">Messi</option>
+            <option value="2">Ronaldo</option>
+            <option value="3">Neymar</option>
+            <option value="4">Ozil</option>
+            <option value="5">Ramos</option>
+            <option value="6">Luka</option>
+        </select>
+        <br/> <br/> <br/> 
+        <input type="submit" value="Sign Up" class="submit-btn">
+    </form>
+    
+</body>
+</html>
